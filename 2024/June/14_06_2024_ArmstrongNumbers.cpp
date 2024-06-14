@@ -32,10 +32,17 @@ class Solution {
   public:
     string armstrongNumber(int n) {
         // code here
-        int a = n % 10;
-        int b = (n % 100 - a) / 10;
-        int c = n % 100;
-        if((a*a*a + b*b*b + c*c*c) == n) return "true";
+        int sum=0;
+        int d; int temp =n;
+        while(temp>0)
+        {
+            d=temp%10;
+            temp=temp/10;
+            sum += d*d*d;
+        }
+        if(sum==n)
+        return "true";
+        else
         return "false";
     }
 };
