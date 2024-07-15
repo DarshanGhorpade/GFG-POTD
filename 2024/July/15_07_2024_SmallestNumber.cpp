@@ -1,6 +1,6 @@
 /*
 Problem Link ---> https://www.geeksforgeeks.org/problems/smallest-number5829/1
-Difficulty   ---> 
+Difficulty   ---> Medium
 
 Given two integers s and d. The task is to find the smallest number such that the sum of its digits is s and the number of digits in the number are d. Return a string that is the smallest possible number. If it is not possible then return -1.
 
